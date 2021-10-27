@@ -1,1 +1,30 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/imgs">
+        <file>imgs/backgroundSized.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/nsis-wizard.bmp</file>
+        <file>icons/nsis-header.bmp</file>
+        <file>icons/bitcoin256.xpm</file>
+        <file>icons/bitcoin256.png</file>
+        <file>icons/bitcoin128.xpm</file>
+        <file>icons/bitcoin128.png</file>
+        <file>icons/bitcoin64.xpm</file>
+        <file>icons/bitcoin64.png</file>
+        <file>icons/bitcoin32.xpm</file>
+        <file>icons/bitcoin32.png</file>
+        <file>icons/bitcoin16.xpm</file>
+        <file>icons/bitcoin16.png</file>
+        <file>icons/bitcoin.ico</file>
+        <file>icons/coins.svg</file>
+        <file>icons/encrypt.svg</file>
+        <file>icons/fiat.svg</file>
+        <file>icons/logo.svg</file>
+        <file>icons/net.svg</file>
+        <file>icons/notifications.svg</file>
+        <file>icons/seed.svg</file>
+        <file>icons/send.svg</file>
+        <file>icons/virtual.svg</file>
+        <file>icons/wallet.svg</file>
+    </qresource>
+</RCC>

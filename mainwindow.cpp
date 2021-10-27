@@ -10,5 +10,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
+    ui->menuFile->setStyleSheet("corner-radius: 20px;");
     delete ui;
 }

@@ -13,8 +13,23 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    HD_KeyRing.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    HD_KeyRing.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    Resources.qrc
+
+unix:!macx: LIBS += -L$$PWD/../../../../../usr/local/lib/ -lbitcoin
+
+INCLUDEPATH += $$PWD/../../../../../usr/local/include
+DEPENDPATH += $$PWD/../../../../../usr/local/include
+
+unix:!macx: LIBS += -L$$PWD/../../../../../usr/lib/i386-linux-gnu/ -lboost_system
+
+INCLUDEPATH += $$PWD/../../../../../usr/lib/i386-linux-gnu
+DEPENDPATH += $$PWD/../../../../../usr/lib/i386-linux-gnu

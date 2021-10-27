@@ -1,24 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
-  <property name="windowTitle" >
-   <string>MainWindow</string>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>HD Key Ring</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resources.qrc">
+    <normaloff>:/icons/icons/bitcoin128.png</normaloff>:/icons/icons/bitcoin128.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(48, 48, 48);
+background-color: qlineargradient(spread:pad, x1:0.898, y1:0.8925, x2:0.222, y2:0.232955, stop:0.162162 rgba(0, 37, 65, 255), stop:0.843243 rgba(2, 45, 87, 202));</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>12</width>
+    <height>12</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(7, 51, 98);</string>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Window</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>100</y>
+      <width>148</width>
+      <height>112</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="Ewe" country="Ghana"/>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreate_Key_Ring"/>
+    <addaction name="actionImport_Key_Ring"/>
+    <addaction name="actionHide_Key_Ring"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuWindow"/>
+  </widget>
+  <action name="actionCreate_Key_Ring">
+   <property name="text">
+    <string>Create Key Ring</string>
+   </property>
+  </action>
+  <action name="actionImport_Key_Ring">
+   <property name="text">
+    <string>Import Key Ring</string>
+   </property>
+  </action>
+  <action name="actionHide_Key_Ring">
+   <property name="text">
+    <string>Hide Key Ring</string>
+   </property>
+  </action>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
- <resources/>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
